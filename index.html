@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M&A Alliance International</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+  <!-- Header: Logo + Menu -->
+ <header class="simple-header">
+  <img src="abi_logo_inverse.png" alt="Logo" class="logo" />
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="simple-menu" id="nav-menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+
+  <section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="Hero.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-overlay">
+    <h1 class="hero-title">Alliance for M&A Professionals and Scaling Up Business Brokers</h1>
+    <p class="hero-subtitle">Providing Leads, Engagements, and Buyer Prospects for Members</p>
+  </div>
+</section>
+
+<!-- 🎯 Floating Hover Card Section that overlaps both -->
+<section class="hover-card-section">
+  <!-- Card 1 -->
+  <div class="hover-card">
+    <img src="buying-a-business.jpg" alt="Service 1" />
+    <div class="hover-content">
+      <h3>Looking to Buy a Business?</h3>
+      <p>Finding potential businesses, valuing them, negotiating terms, conducting due diligence, securing financing, and finalizing the purchase agreement</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="hover-card">
+    <img src="sell.jpg" alt="Service 2" />
+    <div class="hover-content">
+      <h3>Planning to Sell Your Business?</h3>
+      <p>A successful sale hinges on understanding your motivations, accurately valuing the business, and effectively marketing it to potential buyers.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="hover-card">
+    <img src="support.jpg" alt="Service 3" />
+    <div class="hover-content">
+      <h3>Need Help with Your Business?</h3>
+      <p>Consider seeking guidance from experienced mentors or advisors</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Engagement Section -->
+<section class="engagement-split">
+  <div class="engagement-left">
+    <video class="engagement-video" src="Engagement and support.mp4" autoplay muted loop playsinline></video>
+  </div>
+  <div class="engagement-right">
+    <div class="engagement-box">
+      <h2>A global partnership of market leading financial advisory firms</h2>
+      <p>
+        Mergers Alliance is the premier international partnership of market leading financial advisory firms across all major economies in the industrialized world, supporting its member firms through unparalleled information exchange, extraordinary teamwork, and trusted personal/professional relationships.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 🔁 Scrolling Text Section -->
+<section class="scroll-banner">
+  <span>Mergers and Alliance · Mergers and Alliance · Mergers and Alliance · Mergers and Alliance · </span>
+</section>
+   
+
+
+  <!-- Map Section -->
+<section class="europe-map-section">
+  <div class="map-flex">
+    <div class="map-image">
+      <img src="Europe_blank_map.jpg" alt="Europe Map" class="europe-map-img" />
+      <!-- Bullet markers -->
+    <div class="marker tooltip" style="top: 65%; left: 44%;">
+        <span class="tooltiptext">Vienna, Austria</span>
+      </div>
+      <div class="marker tooltip" style="top: 58%; left: 31%;">
+        <span class="tooltiptext">Brussels, Belgium</span>
+      </div>
+      <div class="marker tooltip" style="top: 64%; left: 28%;">
+        <span class="tooltiptext">Paris, France</span>
+      </div>
+      <div class="marker tooltip" style="top: 59%; left: 36%;">
+        <span class="tooltiptext">Frankfurt, Germany</span>
+      </div>
+      <div class="marker tooltip" style="top: 48%; left: 18%;">
+        <span class="tooltiptext">Dublin, Ireland</span>
+      </div>
+      <div class="marker tooltip" style="top: 55%; left: 25%;">
+        <span class="tooltiptext">London, UK</span>
+      </div>
+      <div class="marker tooltip" style="top: 72%; left: 37%;">
+        <span class="tooltiptext">Milan, Italy</span>
+      </div>
+      <div class="marker tooltip" style="top: 82%; left: 25%;">
+        <span class="tooltiptext">Barcelona, Spain</span>
+      </div>
+      <div class="marker tooltip" style="top: 68%; left: 35%;">
+        <span class="tooltiptext">Zürich, Switzerland</span>
+      </div>
+    </div>
+
+    <div class="map-info">
+      <h2>Our European Presence</h2>
+      <p>With a headquarters in Denver, Colorado, ABI also serves key European markets:</p>
+      <ul>
+        <li>Vienna, Austria</li>
+        <li>Brussels, Belgium</li>
+        <li>Paris, France</li>
+        <li>Frankfurt, Germany</li>
+        <li>Dublin, Ireland</li>
+        <li>London, United Kingdom</li>
+        <li>Milan, Italy</li>
+        <li>Barcelona, Spain</li>
+        <li>Zürich, Switzerland</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <!-- Service 1 -->
+    <div class="service-card">
+      <img src="sell side aquisition.jpg" alt="Sell-Side Client Acquisition"></img>
+      <h3>Sell-Side Client Acquisition</h3>
+      <p>Working with the sellers who are trying to find a counterparty for the sale of a client's business.</p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <img src="ai-lead-generation.webp" alt="Lead Generation">
+      <h3>Lead Generation</h3>
+      <p>Attracting potential customers (leads) to a business and nurturing their interest to eventually convert them into paying customers</p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <img src="qualified leads.webp" alt="Qualified Leads & Engagements"> </img>
+      <h3>Qualified Leads & Engagements</h3>
+      <p>Qualified leads and engagement are crucial for successful sales and marketing</p>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-card">
+      <img src="merger and aquisition.png" alt="Marketing for M&A Firms">
+      <h3>Marketing for M&A Firms</h3>
+      <p>Strategic communication and branding efforts to manage perceptions, integrate operations, and drive value creation</p>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="service-card">
+      <img src="MnAsupportservices.webp" alt="M&A Support Services (Valuation, Due Diligence, CIM, Research)">
+      <h3>M&A Support Services (Valuation, Due Diligence, CIM, Research)</h3>
+      <p>Encompass a range of activities that assist in the process of buying, selling, or combining businesses</p>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="service-card">
+      <img src="national international.webp" alt="Buyer Access – National & International">
+      <h3>Buyer Access – National & International</h3>
+      <p>Enables buyers from anywhere to purchase goods and services, fostering both domestic and global trade opportunities.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Our Team -->
+<section class="member-carousel">
+  <h2>Our Members</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev">&#8592;</button>
+
+    <div class="carousel-track">
+      <div class="carousel-slide active"><img src="member1.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="member2.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="member3.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="member4.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="member5.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="member6.jpg" alt=""></div>
+      
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+  </div>
+
+    <!-- ...carousel HTML... -->
+<button class="carousel-contact-btn" onclick="window.location.href='https://maaint.com/contact/'">
+  Contact our central team
+</button>
+
+</section>
+
+
+
+<script>
+  const track = document.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const nextBtn = document.querySelector(".carousel-btn.next");
+  const wrapper = document.querySelector(".carousel-wrapper");
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const slide = slides[0];
+    const slideWidth = slide.offsetWidth + 32; // 32 for gap/margin
+    const wrapperWidth = wrapper.offsetWidth;
+    const totalSlides = slides.length;
+
+    // Determine max translate so last slide is fully centered
+    const maxIndex = totalSlides - 1;
+    const maxTranslate = (slideWidth * maxIndex) - ((wrapperWidth - slideWidth) / 2);
+
+    // Center active slide
+    let translateX = (slideWidth * currentIndex) - ((wrapperWidth - slideWidth) / 2);
+
+    // Clamp so we don't scroll past first or last
+    translateX = Math.max(0, Math.min(translateX, maxTranslate));
+
+    track.style.transform = `translateX(-${translateX}px)`;
+
+    // Highlight active slide
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === currentIndex);
+    });
+  }
+
+  prevBtn.onclick = () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  };
+
+  nextBtn.onclick = () => {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  };
+
+  window.addEventListener("load", updateCarousel);
+  window.addEventListener("resize", updateCarousel);
+</script>
+
+
+
+ 
+
+<!-- Industry Sectors -->
+<!-- Industry Sectors -->
+<section class="our-sectors-horizontal">
+  
+  <div class="sectors-wrapper">
+    <div class="sectors-track">
+      <div class="sector-card">
+        <img src="energy.jpg" alt="Energy" />
+        <div class="sector-text">Energy</div>
+      </div>
+      <div class="sector-card">
+        <img src="technology.avif" alt="Technology" />
+        <div class="sector-text">Technology</div>
+      </div>
+      <div class="sector-card">
+        <img src="healthcare.jpg" alt="Healthcare" />
+        <div class="sector-text">Healthcare</div>
+      </div>
+      <div class="sector-card">
+        <img src="aerospace.jpg" alt="Aerospace" />
+        <div class="sector-text">Aerospace</div>
+      </div>
+      <div class="sector-card">
+        <img src="manufacturing.jpg" alt="Manufacturing" />
+        <div class="sector-text">Manufacturing</div>
+      </div>
+      <div class="sector-card">
+        <img src="distribution.jpg" alt="Distribution" />
+        <div class="sector-text">Distribution</div>
+      </div>
+      <div class="sector-card">
+        <img src="Service.jpeg.jpg" alt="Service" />
+        <div class="sector-text">Service</div>
+      </div>
+      <div class="sector-card">
+        <img src="retail.jpg" alt="Retail" />
+        <div class="sector-text">Retail</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Success Stories Section -->
+
+  <section class="success-story">
+    <h2>Success Story</h2>
+    <div class="cards-container">
+      
+      <!-- Card 1 -->
+<div class="card">
+  <div class="card-image overlay-hover" style="background-image: url('m and a alliance success story.jpg');">
+    <div class="hover-text">Success story</div>
+    <span class="tag">— John M., M&A Advisor</span>
+  </div>
+  <div class="card-content">
+    <p>“Working with M&A Alliance helped us secure a strategic buyer from Europe within 90 days.”</p>
+    <span class="date">Tuesday 8th July 2025</span>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card">
+  <div class="card-image overlay-hover" style="background-image: url('qualified leads.jpg');">
+    <div class="hover-text">Success story</div>
+    <span class="tag">— Sarah K., Investment Banker</span>
+  </div>
+  <div class="card-content">
+    <p>“The qualified leads we received through the network resulted in three successful transactions this year.”</p>
+    <span class="date">Tuesday 8th July 2025</span>
+  </div>
+</div>
+
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-image overlay-hover" style="background-image: url('national.avif');">
+          <div class="hover-text">Success story</div>
+          <span class="tag">— Michael R., Business Broker</span>
+        </div>
+        <div class="card-content">
+          <p>“Their international connections opened doors we never knew existed. Exceptional service.”</p>
+          <span class="date">Monday 7th July 2025</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Join the Network -->
+  <section class="join">
+    <h2>Join the Network</h2>
+    <p>Join a trusted alliance of global M&A professionals. Expand your reach, increase your deal success rate.</p>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Company Name" />
+      <select>
+        <option>M&A Focus Area</option>
+        <option>Investment Banking</option>
+        <option>M&A Advisory</option>
+        <option>Business Brokerage</option>
+      </select>
+      <select>
+        <option>Primary Region</option>
+        <option>North America</option>
+        <option>Europe</option>
+        <option>Asia</option>
+      </select>
+      <button type="submit">Join Now</button>
+    </form>
+  </section>
+
+
+<section class="finn-enquiry-banner">
+  <div class="enquiry-inner">
+    <div class="enquiry-image-wrapper">
+      <img src="finn.png" alt="Enquiry Team" class="enquiry-image">
+    </div>
+    <div class="enquiry-content">
+      <div class="enquiry-text">
+        <h2>M & A Alliance</h2>
+        <p>Got an enquiry? We’re ready to answer it!</p>
+      </div>
+    </div>
+    <div class="enquiry-divider"></div>
+    <div class="enquiry-action">
+      <a href="https://maaint.com/contact/" class="enquiry-btn">Enquire Now</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+    <footer class="finn-footer">
+  <div class="footer-bg"></div>
+  <div class="footer-main">
+    <div class="footer-content">
+      <div class="footer-logo-section">
+        <img src="abi_logo_inverse.png" alt="The Finn Group" class="footer-logo">
+        <p class="footer-desc">
+          We are dedicated to supporting merger and acquisitions brokers, and expanding business brokers to secure the best transactions and offers for their business sale opportunities and capabilities. Find out more about the people behind our Alliance.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about-us/">About Us</a></li>
+            <li><a href="/team/">Our Team</a></li>
+            <li><a href="/testimonials/">Testimonials</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/buy-a-business/">Buy a Business</a></li>
+            <li><a href="/sell-a-business/">Sell a Business</a></li>
+            <li><a href="/franchise/">Franchise</a></li>
+            <li><a href="/finance/">Finance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:(720)200-0470">(720)200-0470</a></li>
+            <li><a href="mailto:maalliance@gmail.com">maalliance@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="" target="_blank" class="social-icon facebook" aria-label="Facebook"></a>
+      <a href="" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"></a>
+      <a href="" target="_blank" class="social-icon instagram" aria-label="Instagram"></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      &copy; © 2025 M & A Alliance International, LLC. All Rights Reserved.
+      <a href="/privacy-policy/">Privacy Policy</a> |
+      <a href="/terms-of-use/">Terms of Use</a>
+    </p>
+  </div>
+</footer>
+
+
+
+  
+</body>
+</html>
+
